@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help_Rules</class>
+ <widget class="QDialog" name="Help_Rules">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>122</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>help</string>
+  </property>
+  <widget class="QDialogButtonBox" name="button_ok">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>140</y>
+     <width>81</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::NoButton</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>-30</y>
+     <width>1081</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Краткие правила:
+Это кликер, здесь надо набрать как можно больше очков, неважно каким образом
+Можно либо кликать самому и прокачивать свои клики чтобы каждый из них приносил всё больше и больше очков, 
+ либо можно покупать прокачки которые работают за вас
+(нажимаете на кнопку с названием прокачки и она у вас покупается и приносит определенное количество очков в секунду 
+( бабушка-5 очков/c,  ферма – 100 очков/c, завод – 1000 очков/c, шахта – 4000 очков/с , лаборатория – 12000 очков/c , портал – 20000 очков/c))
+
+Так же тут есть таблица лидеров где показан ник человека и сколько очков было у него в последнем сохраненном забеге.
+</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_ok</sender>
+   <signal>accepted()</signal>
+   <receiver>Help_Rules</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_ok</sender>
+   <signal>rejected()</signal>
+   <receiver>Help_Rules</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
